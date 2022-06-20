@@ -12,6 +12,7 @@ struct Bussola_by_FPApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
         }
     }
 }

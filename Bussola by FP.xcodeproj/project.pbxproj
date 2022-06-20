@@ -11,6 +11,10 @@
 		034E7D522860D56600E56D5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E7D512860D56600E56D5C /* ContentView.swift */; };
 		034E7D542860D56B00E56D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034E7D532860D56B00E56D5C /* Assets.xcassets */; };
 		034E7D572860D56B00E56D5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034E7D562860D56B00E56D5C /* Preview Assets.xcassets */; };
+		034E7D5F2860D7B700E56D5C /* Markers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E7D5E2860D7B700E56D5C /* Markers.swift */; };
+		034E7D612860D7D300E56D5C /* Clino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E7D602860D7D300E56D5C /* Clino.swift */; };
+		034E7D632860D7EE00E56D5C /* CompassHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E7D622860D7EE00E56D5C /* CompassHeading.swift */; };
+		034E7D652860D80600E56D5C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E7D642860D80600E56D5C /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		034E7D512860D56600E56D5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		034E7D532860D56B00E56D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		034E7D562860D56B00E56D5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		034E7D5D2860D5E600E56D5C /* Bussola-by-FP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bussola-by-FP-Info.plist"; sourceTree = SOURCE_ROOT; };
+		034E7D5E2860D7B700E56D5C /* Markers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markers.swift; sourceTree = "<group>"; };
+		034E7D602860D7D300E56D5C /* Clino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clino.swift; sourceTree = "<group>"; };
+		034E7D622860D7EE00E56D5C /* CompassHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassHeading.swift; sourceTree = "<group>"; };
+		034E7D642860D80600E56D5C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		034E7D4E2860D56600E56D5C /* Bussola by FP */ = {
 			isa = PBXGroup;
 			children = (
+				034E7D5D2860D5E600E56D5C /* Bussola-by-FP-Info.plist */,
 				034E7D4F2860D56600E56D5C /* Bussola_by_FPApp.swift */,
 				034E7D512860D56600E56D5C /* ContentView.swift */,
+				034E7D5E2860D7B700E56D5C /* Markers.swift */,
+				034E7D602860D7D300E56D5C /* Clino.swift */,
+				034E7D622860D7EE00E56D5C /* CompassHeading.swift */,
+				034E7D642860D80600E56D5C /* Location.swift */,
 				034E7D532860D56B00E56D5C /* Assets.xcassets */,
 				034E7D552860D56B00E56D5C /* Preview Content */,
 			);
@@ -137,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034E7D632860D7EE00E56D5C /* CompassHeading.swift in Sources */,
 				034E7D522860D56600E56D5C /* ContentView.swift in Sources */,
 				034E7D502860D56600E56D5C /* Bussola_by_FPApp.swift in Sources */,
+				034E7D5F2860D7B700E56D5C /* Markers.swift in Sources */,
+				034E7D652860D80600E56D5C /* Location.swift in Sources */,
+				034E7D612860D7D300E56D5C /* Clino.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,17 +282,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bussola by FP/Preview Content\"";
 				DEVELOPMENT_TEAM = 5DPX8M9Z36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bussola-by-FP-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bussola by FP";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to function properly.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "accelerometer gyroscope location-services magnetometer";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,17 +319,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bussola by FP/Preview Content\"";
 				DEVELOPMENT_TEAM = 5DPX8M9Z36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bussola-by-FP-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bussola by FP";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to function properly.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "accelerometer gyroscope location-services magnetometer";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +347,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
